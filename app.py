@@ -33,7 +33,7 @@ jmail =[]
 
 @app.get("/")
 def root():
-    return ""
+    return {'message': 'this is the root message'}
 
 @app.get("/Jmail/")
 def Get_all():
