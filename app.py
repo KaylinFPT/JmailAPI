@@ -45,7 +45,7 @@ def Get_all():
 
 @app.get("/Jmail/{id}")
 def Get(id: int):
-    ses = uopy.connect(host='172.16.88.23', user='KAYLIN', password='Welcome01', account='DUR')
+    ses = uopy.connect(host='*******', user='*****', password='*******', account='DUR')
     records = DbContext.get_jmail(id)
     ses.close()
     if not records:
